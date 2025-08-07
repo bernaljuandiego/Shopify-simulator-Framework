@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "webpack"
+    "build": "webpack",
+    "serve": "nodemon server.js",
+    "dev": "concurrently \"webpack --watch\" \"nodemon server.js\""
   },
   "keywords": [
     "shopify",
@@ -19,7 +21,10 @@
     "liquidjs": "^10.20.1"
   },
   "devDependencies": {
+    "concurrently": "^9.2.0",
     "css-loader": "^6.7.3",
+    "mini-css-extract-plugin": "^2.9.3",
+    "nodemon": "^3.1.10",
     "sass": "^1.62.0",
     "sass-loader": "^13.3.2",
     "style-loader": "^3.3.2",
