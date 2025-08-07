@@ -21,6 +21,8 @@
     "liquidjs": "^10.20.1"
   },
   "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "browser-sync-webpack-plugin": "^2.4.0",
     "concurrently": "^9.2.0",
     "css-loader": "^6.7.3",
     "mini-css-extract-plugin": "^2.9.3",
