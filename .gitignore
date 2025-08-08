@@ -33,6 +33,8 @@ jspm_packages/
 
 web_modules/
 
+public/
+
 *.tsbuildinfo
 
 .npm
