@@ -1,0 +1,14 @@
+<section class="latest-collection">
+  <div class="latest-collection__title">
+    <div class="latest-collection__icon">{% render 'star' %}</div>
+    <h1 class="latest-collection__text">{{ settings['latest-collection'].settings.heading }}</h1>
+    <div class="latest-collection__icon">{% render 'star' %}</div>
+  </div>
+  <div class="latest-collection__content">
+    <div class="latest-collection__content-flexible">
+      {% render 'collection-card', collection: settings.latest-collection.collections[0] %}
+      {% render 'collection-card', collection: settings.latest-collection.collections[1] %}
+    </div>
+    {% render 'collection-card', collection: settings.latest-collection.collections[2] %}
+  </div>
+</section>

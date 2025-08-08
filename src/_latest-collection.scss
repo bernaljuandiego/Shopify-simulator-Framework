@@ -1,0 +1,35 @@
+.latest-collection {
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    &__icon {
+        height: 75px;
+        margin: 0 15px;
+    }
+
+    &__content {
+        margin: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__content-flexible {
+        gap: 32px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 767px) {
+    .latest-collection {
+        &__content-flexible {
+            flex-direction: column;
+        }
+    }
+}
