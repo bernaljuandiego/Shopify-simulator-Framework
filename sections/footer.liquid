@@ -1,0 +1,49 @@
+<section class="footer">
+  <div class="movil">
+    {% render 'footer-logo', text: settings.footer.settings.logo_text %}
+  </div>
+  <div class="footer__content">
+    <div class="footer__content-flexible">
+      {% for link in settings.footer.settings.links limit: 4 %}
+        <h4 class="footer__content-hover">{{ link.label | upcase }}</h4>
+      {% endfor %}
+    </div>
+    <div class="footer__content-flexible">
+      {% for link in settings.footer.settings.links offset: 4 limit: 3 %}
+        <h5 class="footer__content-hover">{{ link.label | upcase }}</h5>
+      {% endfor %}
+    </div>
+    <div class="footer__content-categories">
+      <p>We accept all major cards, PayPal & crypto</p>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/64px-Bitcoin.svg.png?20140331024207"
+        width="25px"
+        height="25px"
+      >
+      <img src="https://cdn.worldvectorlogo.com/logos/ethereum-eth.svg" width="25px" height="25px">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Litecoin.svg" width="25px" height="25px">
+      <img src="https://cdn-icons-png.flaticon.com/512/825/825445.png" width="25px" height="25px">
+      <img
+        src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/vectors/usdc-fpxuadmgafrjjy85bgie5.png/usdc-kksfxcrdl3f9pjx0v6jxxp.png?_a=DATAg1AAZAA0"
+        width="25px"
+        height="25px"
+      >
+    </div>
+  </div>
+  <div class="footer__content-horizontal">
+    <div class="footer__content-social">
+      <div>
+        <p>Subscribe and receive drop notifications</p>
+        <input type="text" placeholder="Enter Email">
+      </div>
+      <div class="footer__content-categories">
+        <p class="footer__content-hover"><a href="https://www.facebook.com/">FACEBOOK</a></p>
+        <p class="footer__content-hover"><a href="https://x.com/">X(TWITTER)</a></p>
+        <p class="footer__content-hover"><a href="https://www.instagram.com/">INSTAGRAM</a></p>
+      </div>
+    </div>
+    <div class="desktop">
+      {% render 'footer-logo', text: settings.footer.settings.logo_text %}
+    </div>
+  </div>
+</section>
