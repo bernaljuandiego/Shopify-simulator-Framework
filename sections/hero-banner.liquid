@@ -1,0 +1,20 @@
+<section class="herobanner">
+  <div class="herobanner__image">
+    <img src="/assets/{{ settings.hero-banner.settings.background_image }}" alt="{{ product.title }}" width="" height="">
+    <button class="movil">{{ settings.hero-banner.settings.button_text }}</button>
+  </div>
+  <div class="herobanner__marquee">
+    <div class="herobanner__content">
+      <h1 class="herobanner__text">{{ settings.hero-banner.settings.marquee_text }}</h1>
+      <div class="herobanner__icon">{% render 'star' %}</div>
+      <h1 class="herobanner__text">{{ settings.hero-banner.settings.marquee_text }}</h1>
+      <div class="herobanner__icon">{% render 'star' %}</div>
+    </div>
+    <div class="herobanner__content" aria-hidden="true">
+      <h1 class="herobanner__text">{{ settings.hero-banner.settings.marquee_text }}</h1>
+      <div class="herobanner__icon">{% render 'star' %}</div>
+      <h1 class="herobanner__text">{{ settings.hero-banner.settings.marquee_text }}</h1>
+      <div class="herobanner__icon">{% render 'star' %}</div>
+    </div>
+  </div>
+</section>
