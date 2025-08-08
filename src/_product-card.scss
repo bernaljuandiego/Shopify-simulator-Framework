@@ -21,7 +21,6 @@
             aspect-ratio: 4 / 5;
             width: 100%;
             object-fit: cover;
-            transition: transform 0.5s ease;
         }
     }
 
@@ -47,7 +46,9 @@
         }
 
         &:hover {
-            opacity: 0.8;
+            transition: transform 0.5s ease;
+            transform: translateY(-3px);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
     }
 
@@ -66,10 +67,11 @@
     }
 
     &__tag:hover {
-        opacity: 0.8;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     }
 
     &:hover &__image-border-container img {
+        transition: transform 0.5s ease;
         transform: scale(1.2);
     }
 }
