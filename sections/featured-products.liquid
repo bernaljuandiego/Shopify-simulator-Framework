@@ -1,7 +1,39 @@
-<section class="featured-products">
+<section class="featured-products" id="products">
   <div class="featured-products__product-list">
     {% for product in products %}
-      {% render 'product-card', product: product %}
+      <div
+        class="producto movil"
+        {% if forloop.index > 4 %}
+          style="display:none"
+        {% endif %}
+      >
+        {% render 'product-card', product: product %}
+      </div>
+      <div class="desktop">{% render 'product-card', product: product %}</div>
     {% endfor %}
   </div>
+  <div class="featured-products__product-button">
+    <button id="view-all-btn" class="movil">view all</button>
+  </div>
 </section>
+<script>
+  //logica de ocultar elementos
+  const btn = document.getElementById('view-all-btn');
+  const productList = document.querySelector('.featured-products__product-list');
+  btn.addEventListener('click', () => {
+    // se valida si el componente muestra todos los elementos
+    const isActive = productList.style.flexWrap === 'wrap';
+    if (!isActive) {
+      //aplicar las clases correspondientes de visibilidad
+      productList.querySelectorAll('.producto').forEach((card) => (card.style.display = 'block'));
+      productList.style.flexWrap = 'wrap';
+      btn.textContent = 'View less';
+    } else {
+      productList.querySelectorAll('.producto').forEach((card, idx) => {
+        card.style.display = idx < 4 ? 'block' : 'none';
+      });
+      productList.style.flexWrap = 'nowrap';
+      btn.textContent = 'View all';
+    }
+  });
+</script>

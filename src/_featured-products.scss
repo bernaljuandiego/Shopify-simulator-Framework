@@ -1,7 +1,31 @@
 .featured-products {
+  margin: 32px;
+
   &__product-list {
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
+
+    .desktop {
+      display: none;
+    }
+  }
+
+  &__product-button{
+    display: flex;
+    justify-content: center;
+    margin: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .featured-products {
+
+    &__product-list {
+      overflow: auto;
+      .desktop {
+        display: flex;
+        min-width: 320px;
+      }
+    }
   }
 }

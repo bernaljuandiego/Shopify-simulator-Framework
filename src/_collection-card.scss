@@ -1,4 +1,5 @@
 .collection-card {
+    animation: fadeScaleIn 1s ease forwards;
     &__image {
         position: relative;
         overflow: hidden;

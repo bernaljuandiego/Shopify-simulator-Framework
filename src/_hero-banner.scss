@@ -1,5 +1,6 @@
 .herobanner {
     overflow: hidden;
+
     &__marquee {
         display: flex;
         width: max-content;
@@ -23,6 +24,7 @@
     &__image {
         position: relative;
         margin: 32px;
+        animation: fadeScaleIn 1s ease forwards;
 
         img {
             display: block;

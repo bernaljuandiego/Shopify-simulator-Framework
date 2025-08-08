@@ -4,7 +4,7 @@
     &__marquee {
         display: flex;
         width: max-content;
-        animation: marquee 15s linear infinite;
+        animation: marquee 20s linear infinite;
     }
 
     &__content {
@@ -13,8 +13,9 @@
     }
 
     &__text {
-        padding: 5px;
+        padding: 10px;
         font-weight: 900;
+        text-transform: uppercase;
     }
 
     &__icon {

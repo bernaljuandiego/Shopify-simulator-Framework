@@ -5,6 +5,8 @@
 @import 'hero-banner';
 @import 'latest-collection';
 @import 'collection-card';
+@import 'footer';
+@import 'footer-logo';
 
 @font-face {
   font-family: 'regular';
@@ -65,6 +67,11 @@ body {
     line-height: 24px;
   }
 
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+
   button {
     font-family: 'bold', Arial, sans-serif;
     font-size: 32px;
@@ -73,6 +80,9 @@ body {
     border-radius: 5px;
     padding: 6px 20px;
     height: 72px;
+    min-width: 67px;
+    text-align: center;
+    align-items: center;
     background-color: rgb(118 44 251);
   }
 
@@ -90,7 +100,7 @@ body {
   }
 
   .page-content {
-    max-width: 1400px;
+    max-width: 1450px;
     margin: 0 auto;
   }
 }
@@ -101,9 +111,20 @@ body {
   box-sizing: inherit;
 }
 
-
 @media (max-width: 767px) {
   .movil {
     display: none !important;
   }
+}
+
+@keyframes fadeScaleIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

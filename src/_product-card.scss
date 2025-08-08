@@ -1,5 +1,6 @@
 .product-card {
     max-width: 328px;
+    animation: fadeScaleIn 1s ease forwards;
 
     &__image-border {
         position: relative;
@@ -13,6 +14,7 @@
     }
 
     &__image-border-container {
+        height: 407px;
         overflow: hidden;
         border-radius: 5px;
 
@@ -20,6 +22,7 @@
             display: block;
             aspect-ratio: 4 / 5;
             width: 100%;
+            height: 100%;
             object-fit: cover;
         }
     }
@@ -32,6 +35,7 @@
 
     &__info-image {
         width: 48px;
+        height: 48px;
         background-color: rgb(118 44 251);
         border-radius: 100%;
         display: flex;
