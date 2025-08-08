@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles.css">
   <title>Shopify Simulator | Gradiweb</title>
 </head>
+
 <body>
-  {% include 'featured-products.liquid' %}
+  <div class="page-header">
+    {% include 'topbar.liquid' %}
+    {% include 'header.liquid' %}
+  </div>
+  <div>
+    {% include 'featured-products.liquid' %}
+  </div>
   <script src="/main.js"></script>
 </body>
+
 </html>
