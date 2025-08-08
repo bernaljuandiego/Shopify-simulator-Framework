@@ -1,0 +1,33 @@
+.collection-card {
+    &__image {
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 440px;
+            aspect-ratio: 1360 / 600;
+            object-fit: cover;
+        }
+
+        h3 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 32px;
+        }
+    }
+
+    &:hover &__image img {
+        transition: transform 0.5s ease;
+        transform: scale(1.2);
+    }
+
+    &:hover &__image h3 {
+        font-weight: bold;
+        transition: transform 0.5s ease;
+        transform: translateY(-5px);
+    }
+}
