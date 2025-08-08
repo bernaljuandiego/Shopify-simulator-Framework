@@ -6,12 +6,29 @@
         "marquee_text": "Free Shipping on Orders Over $100"
       }
     },
-    "featured-products": {
-      "type": "featured-products",
+    "latest-collection": {
+      "type": "latest-collection",
       "settings": {
         "heading": "Our Featured Products",
         "background_color": "#ffffff"
-      }
+      },
+      "collections": [
+        {
+          "id": 1,
+          "title": "Shuffle Crewneck Black",
+          "image": "ket_club.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Shuffle Essentials",
+          "image": "shuffle_essentials.webp"
+        },
+        {
+          "id": 3,
+          "title": "",
+          "image": "shuffle_hat_purple.avif"
+        }
+      ]
     },
     "hero-banner": {
       "type": "hero-banner",
